@@ -4,7 +4,6 @@ WORKDIR /app
 COPY . .
 RUN yarn
 ENV NEXT_TELEMETRY_DISABLED 1
-RUN yarn migrate
 RUN yarn generate
 RUN yarn push-db
 RUN yarn seed-db
