@@ -40,7 +40,7 @@ const Home: FC<Props> = ({
       <CartLink />
       <div className="w-full">
         <Head>
-          <title>Jamstack ECommerce</title>
+          <title>Minimista - Shop online!</title>
           <meta
             name="description"
             content="Jamstack ECommerce Next provides a way to quickly get up and running with a fully configurable ECommerce site using Next.js."
@@ -49,13 +49,13 @@ const Home: FC<Props> = ({
         </Head>
         <div className="flex flex-col p-6 pb-10 bg-blue-300 smpb-6 lg:flex-row">
           <div className="flex flex-col pt-4 pl-2 sm:pt-12 sm:pl-12">
-            <Tag year="2021" category="SOFAS" />
+            <Tag year="2023" category="SOFAS" />
             <Center
               price="200"
               title={inventory[2].name}
               link={`/product/${slugify(inventory[2].name)}`}
             />
-            <Footer designer="Jason Bourne" />
+            <Footer designer="MINIMISTA" />
           </div>
           <div className="relative flex items-center justify-center flex-1">
             <Showcase imageSrc={inventory[2].image} />
@@ -78,7 +78,7 @@ const Home: FC<Props> = ({
         />
       </div>
       <div className="flex flex-col items-center pt-10 pb-6">
-        <h2 className="mb-3 text-4xl">Trending Now</h2>
+        <h2 className="mb-3 text-4xl">ترند</h2>
         <p className="text-sm text-gray-600">
           Find the perfect piece or accessory to finish off your favorite room
           in the house.

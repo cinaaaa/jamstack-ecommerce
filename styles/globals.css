@@ -2,27 +2,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
 
-@font-face {
-  font-family: "Eina";
-  src: url("/fonts/Eina.otf");
+*‌  {
+  font-family: 'Vazirmatn', sans-serif !important;
 }
 
-
-@font-face {
-  font-family: "Eina Light";
-  src: url("/fonts/Eina-Light.otf");
-}
-
-@font-face {
-  font-family: "Eina SemiBold";
-  src: url("/fonts/Eina-SemiBold.otf");
+.font-semibold {
+  font-family: 'Vazirmatn', sans-serif !important;
 }
 
 @layer base {
   p, h1, h2, h3, h4, h5 {
     color: rgba(0, 0, 0, .8);
-    font-family: Eina;
+    font-family: 'Vazirmatn', sans-serif;
   }
 }
 
