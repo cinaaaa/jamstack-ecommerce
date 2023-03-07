@@ -2,13 +2,12 @@ FROM node:14-alpine AS builder
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 COPY . .
-RUN npm ci
+RUN yarn
 ENV NEXT_TELEMETRY_DISABLED 1
-RUN npx prisma migrate deploy
 RUN npx prisma generate
 RUN npx prisma push-db
 RUN npx prisma seed-db
-RUN npm run build
+RUN yarn build
 RUN mkdir -p /app/.next/cache/images
 # Production image, copy all the files and run next
 FROM node:14-alpine AS runner
